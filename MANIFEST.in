@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include aoai_app *.css
+recursive-include aoai_app *.csv
+recursive-include aoai_app *.html
+recursive-include aoai_app *.ico
+recursive-include aoai_app *.js
+recursive-include aoai_app *.json
+recursive-include aoai_app *.md
+recursive-include aoai_app *.png
+recursive-include aoai_app *.py
+recursive-include aoai_app *.svg
+recursive-include aoai_app *.txt
+recursive-exclude aoai_app *.pyc
