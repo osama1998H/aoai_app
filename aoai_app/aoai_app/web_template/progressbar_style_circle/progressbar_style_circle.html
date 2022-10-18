@@ -1,0 +1,42 @@
+<!-- Start progress style-large  -->
+<div class="rwt-progressbar-area rn-section-gap">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <div class="section-title text-left" data-sal="slide-up" data-sal-duration="400" data-sal-delay="150">
+                    {% if small_title %}
+                    <h4 class="subtitle ">
+                        <span class="theme-gradient">{{_(small_title)}}</span>
+                    </h4>
+                    {% endif %}
+                    <h2 class="title w-600 mb--20">{{_(title)}}</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <div class="row row--30 mt_dec--30">
+                    {% for bar in progress %}
+                    <!-- Start Single Progress Bar  -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 mt--30 col-12">
+                        <div class="radial-progress-single">
+                            <div class="radial-progress" data-percent="{{bar.bar_percentage}}" data-bar-color="#{{bar.bar_color}}"
+                                data-track-color="#0f0f11">
+                                <div class="circle-text">
+                                    <span class="count">{{bar.bar_percentage}}</span>
+                                </div>
+                            </div>
+                            <div class="circle-info">
+                                <h4 class="title">{{_(bar.bar_title)}}</h4>
+                                <h6 class="subtitle">{{_(bar.bar_subtitle)}}</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Progress Bar  -->
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End progress style-large  -->

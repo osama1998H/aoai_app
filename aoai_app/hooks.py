@@ -16,7 +16,38 @@ app_license = "MIT"
 
 # include js, css files in header of web template
 # web_include_css = "/assets/aoai_app/css/aoai_app.css"
+web_include_css = [
+    # "/assets/aoai_app/css/vendor/bootstrap.min.css",
+    "/assets/aoai_app/css/plugins/animation.css",
+    "/assets/aoai_app/css/plugins/feature.css",
+    "/assets/aoai_app/css/plugins/magnify.min.css",
+    "/assets/aoai_app/css/plugins/slick.css",
+    "/assets/aoai_app/css/plugins/slick-theme.css",
+    "/assets/aoai_app/css/plugins/lightbox.css",
+    "/assets/aoai_app/css/style.css",
+]
 # web_include_js = "/assets/aoai_app/js/aoai_app.js"
+web_include_js = [
+    "/assets/aoai_app/js/vendor/modernizr.min.js",
+    "/assets/aoai_app/js/vendor/jquery.min.js",
+    "/assets/aoai_app/js/vendor/bootstrap.min.js",
+    "/assets/aoai_app/js/vendor/popper.min.js",
+    "/assets/aoai_app/js/vendor/waypoint.min.js",
+    "/assets/aoai_app/js/vendor/wow.min.js",
+    "/assets/aoai_app/js/vendor/counterup.min.js",
+    "/assets/aoai_app/js/vendor/feather.min.js",
+    "/assets/aoai_app/js/vendor/sal.min.js",
+    "/assets/aoai_app/js/vendor/masonry.js",
+    "/assets/aoai_app/js/vendor/imageloaded.js",
+    "/assets/aoai_app/js/vendor/magnify.min.js",
+    "/assets/aoai_app/js/vendor/lightbox.js",
+    "/assets/aoai_app/js/vendor/slick.min.js",
+    "/assets/aoai_app/js/vendor/easypie.js",
+    "/assets/aoai_app/js/vendor/text-type.js",
+    "/assets/aoai_app/js/vendor/jquery.style.swicher.js",
+    "/assets/aoai_app/js/vendor/js.cookie.js",
+    "/assets/aoai_app/js/main.js",
+]
 
 # include custom scss in every website theme (without file extension ".scss")
 # website_theme_scss = "aoai_app/public/scss/website"

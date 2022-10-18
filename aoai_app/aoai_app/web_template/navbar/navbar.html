@@ -1,0 +1,148 @@
+<!-- Start Header Area  -->
+<header class="rn-header header-default header-not-transparent header-sticky">
+    <div class="container position-relative">
+        <div class="row align-items-center row--0">
+            <div class="col-lg-3 col-md-6 col-4">
+                <div class="logo">
+                    <a href="index.html">
+                        <img class="logo-light" src="{{ banner_image }}" alt="Corporate Logo">
+                        <img class="logo-dark" src="{{ banner_image }}" alt="Corporate Logo">
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-6 col-8 position-static">
+                <div class="header-right">
+                    <nav class="mainmenu-nav d-none d-lg-block">
+                        <ul class="mainmenu">
+                            <li class="has-droupdown has-menu-child-item"><a href="#">Home</a>
+                                <ul class="submenu">
+                                    <li><a href="index-business-consulting.html">Business Consulting</a></li>
+                                    <li><a href="index-business-consulting-2.html">Business Consulting 02</a></li>
+                                    <li><a href="index-magazine.html">Magazine <span
+                                                class="rn-badge-card">New</span></a></li>
+                                    <li><a href="index-corporate.html">Corporate</a></li>
+                                    <li><a href="index-business.html">Business</a></li>
+                                    <li><a href="index-digital-agency.html">Digital Agency</a></li>
+                                    <li><a href="index-finance.html">Finance</a></li>
+                                    <li><a href="index-company.html">Company</a></li>
+                                    <li><a href="index-marketing-agency.html">Marketing Agency</a></li>
+                                    <li><a href="index-travel-agency.html">Travel Agency</a></li>
+                                    <li><a href="index-consulting.html">Consulting</a></li>
+                                    <li><a href="index-seo-agency.html">SEO Agency</a></li>
+                                    <li><a href="index-personal-portfolio.html">Personal Portfolio</a></li>
+                                    <li><a href="index-event-conference.html">Event Conference</a></li>
+                                    <li><a href="index-creative-portfolio.html">Creative Portfolio</a></li>
+                                    <li><a href="index-freelancer.html">Freelancer</a></li>
+                                    <li><a href="index-international-consulting.html">International Consulting</a></li>
+                                    <li><a href="index-startup.html">Startup</a></li>
+                                    <li><a href="index-web-agency.html">Web Agency</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            {%- for item in top_bar_items -%}
+                                {% if not item.parent_label and not item.right -%}
+                                    <li><a href="{{ item.url }}">{{ item.label }}</a></li>
+                                {%- endif -%}
+                            {%- endfor %}
+
+
+                            {% for item in items %}
+                            <li><a href="about.html">{{item.name}}</a></li>
+
+                            {% endfor %}
+                        </ul>
+
+                    </nav>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="true" aria-label="Toggle navigation">
+                        <span>
+                            <svg class="icon icon-lg">
+                                <use href="#icon-menu"></use>
+                            </svg>
+                        </span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        {% include "templates/includes/navbar/navbar_items.html" %}
+                    </div>
+                    <div class="form-group mb-0 hide" id="language-switcher">
+                        <select class="form-control"></select>
+                    </div>
+                    
+                    <!-- Start Header Btn  -->
+                    {%- if call_to_action -%}
+                    <div class="header-btn"><a class="btn-default btn-small round" target="_blank"
+                        href="{{ call_to_action_url | abs_url }}">{{_(call_to_action)}}</a>
+                    </div>
+                    {%- endif -%}
+                    <!-- End Header Btn  -->
+
+                    <!-- Start Mobile-Menu-Bar -->
+                    <div class="mobile-menu-bar ml--5 d-block d-lg-none">
+                        <div class="hamberger">
+                            <button class="hamberger-button">
+                                <i class="feather-menu"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Start Mobile-Menu-Bar -->
+
+
+                    <div id="my_switcher" class="my_switcher">
+                        <ul>
+                            <li>
+                                <a href="javascript: void(0);" data-theme="light" class="setColor light">
+                                    <img class="sun-image" src="assets/aoai_app/images/icons/sun-01.svg"
+                                        alt="Sun images">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);" data-theme="dark" class="setColor dark">
+                                    <img class="Victor Image" src="assets/aoai_app/images/icons/vector.svg"
+                                        alt="Vector Images">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    {% include "templates/includes/navbar/navbar_login.html" %}
+                </div>
+            </div>
+
+        </div>
+    </div>
+</header>
+<!-- End Header Area  -->
+<div class="popup-mobile-menu">
+    <div class="inner">
+        <div class="header-top">
+            <div class="logo">
+                <a href="index.html">
+                    <img class="logo-light" src="{{ banner_image }}" alt="Corporate Logo">
+                    <img class="logo-dark" src="{{ banner_image }}" alt="Corporate Logo">
+                </a>
+            </div>
+            <div class="close-menu">
+                <button class="close-button">
+                    <i class="feather-x"></i>
+                </button>
+            </div>
+        </div>
+        <ul class="mainmenu">
+            {% for item in top_bar_items %}
+                {% if item.parent_label %}
+                <li class="has-droupdown has-menu-child-item"><a href="#">{{item.parent_label}}</a>
+                    <ul class="submenu">
+                        {% for item in top_bar_items %}
+                        <li><a href="index-business-consulting.html">{{item.label}}</a></li>
+                            
+                        {% endfor %}
+                        
+                    </ul>
+                </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+</div>
