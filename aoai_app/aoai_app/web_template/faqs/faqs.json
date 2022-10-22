@@ -1,0 +1,52 @@
+{
+ "__unsaved": 1,
+ "creation": "2022-10-22 14:19:06.551446",
+ "docstatus": 0,
+ "doctype": "Web Template",
+ "fields": [
+  {
+   "__unsaved": 1,
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title",
+   "reqd": 0
+  },
+  {
+   "__unsaved": 1,
+   "fieldname": "sub_title",
+   "fieldtype": "Data",
+   "label": "Sub Title",
+   "reqd": 0
+  },
+  {
+   "__unsaved": 1,
+   "fieldname": "faqs",
+   "fieldtype": "Table Break",
+   "label": "FAQs",
+   "reqd": 0
+  },
+  {
+   "__unsaved": 1,
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title",
+   "reqd": 0
+  },
+  {
+   "__unsaved": 1,
+   "fieldname": "content",
+   "fieldtype": "Small Text",
+   "label": "Content",
+   "reqd": 0
+  }
+ ],
+ "idx": 0,
+ "modified": "2022-10-22 14:50:00.988637",
+ "modified_by": "Administrator",
+ "module": "Aoai App",
+ "name": "FAQs",
+ "owner": "Administrator",
+ "standard": 1,
+ "template": "",
+ "type": "Component"
+}
