@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "field:name1",
  "creation": "2022-10-23 10:23:57.519112",
@@ -35,7 +36,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-10-23 10:23:57.519112",
+ "modified": "2022-10-24 09:58:56.084485",
  "modified_by": "Administrator",
  "module": "Aoai App",
  "name": "Daily Report Task",

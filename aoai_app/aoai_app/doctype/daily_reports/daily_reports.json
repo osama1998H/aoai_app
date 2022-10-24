@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "format:Report-{employee_name}-{date}",
  "creation": "2022-10-23 10:28:12.266257",
@@ -16,7 +17,6 @@
   "department",
   "section_break_8",
   "today_achievements",
-  "amended_from",
   "amended_from"
  ],
  "fields": [
@@ -106,7 +106,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-10-23 10:28:12.266257",
+ "modified": "2022-10-24 09:59:16.755285",
  "modified_by": "Administrator",
  "module": "Aoai App",
  "name": "Daily Reports",

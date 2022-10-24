@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "field:description",
  "creation": "2022-10-23 11:30:30.019992",
@@ -29,7 +30,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-10-23 11:30:30.019992",
+ "modified": "2022-10-24 09:58:55.308794",
  "modified_by": "Administrator",
  "module": "Aoai App",
  "name": "Common Issue",
